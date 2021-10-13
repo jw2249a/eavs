@@ -1,0 +1,8 @@
+/data/*
+!/data/eavs_conversion_file.csv
+!/data/eavs_definitions.csv
+.Rhistory
+/.git
+*.pptx
+*.xlsx
+all_years_eavs.csv

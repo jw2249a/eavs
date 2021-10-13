@@ -1,0 +1,535 @@
+"Topic","Question","Question.Number","Question.Number.formatted","variable.rename"
+"Total Registration","TOTAL number of registered and eligible voters","A1a","qa1a","reg_registeredVoters_total"
+"Total Registration","TOTAL number of active voters","A1b","qa1b","reg_activeReg"
+"Total Registration","TOTAL number of inactive voters","A1c","qa1c","reg_inactiveReg"
+"Total Registration","Comments","A1Comments","qa1comments","reg_registeredVoters_total_c"
+"Same Day Registrations","TOTAL new same day registrations","A2a","qa2a","reg_sameDayRegistration_total"
+"Same Day Registrations","Same day registrations received on Election Day","A2b","qa2b","reg_sameDayRegistration_electionDay"
+"Same Day Registrations","Same day registrations received before Election Day","A2c","qa2c","reg_sameDayRegistration_early"
+"Same Day Registrations","Comments","A2Comments","qa2comments","reg_sameDayRegistrationAppStatus_c"
+"Type of Registration Forms Received","TOTAL registration forms received","A3a","qa3a","reg_newRegistrationAppStatus"
+"Type of Registration Forms Received","New valid registrations (excluding pre-registrations of persons under 18)","A3b","qa3b","reg_newRegistrationAppStatus_validReg"
+"Type of Registration Forms Received","New “pre” registrations of persons under age 18","A3c","qa3c","reg_newRegistrationAppStatus_PreReg"
+"Type of Registration Forms Received","Duplicates of existing valid registrations","A3d","qa3d","reg_newRegistrationAppStatus_duplicateRegistration"
+"Type of Registration Forms Received","Invalid or rejected (other than duplicates)","A3e","qa3e","reg_newRegistrationAppStatus_rejected"
+"Type of Registration Forms Received","Changes to name, party, or within-jurisdiction address 
+change","A3f","qa3f","reg_newRegistrationAppStatus_changeRegWithinJurisdiction"
+"Type of Registration Forms Received","Address changes that cross jurisdiction borders","A3g","qa3g","reg_newRegistrationAppStatus_changeRegMoved"
+"Type of Registration Forms Received","Other - Description Text 1","A3h_Other","qa3h_other","reg_newRegistrationAppStatus_other1_o"
+"Type of Registration Forms Received","Other - Count 1","A3h","qa3h","reg_newRegistrationAppStatus_other1"
+"Type of Registration Forms Received","Other - Description Text 2","A3i_Other","qa3i_other","reg_newRegistrationAppStatus_other2_o"
+"Type of Registration Forms Received","Other - Count 2","A3i","qa3i","reg_newRegistrationAppStatus_other2"
+"Type of Registration Forms Received","Other - Description Text 3","A3j_Other","qa3j_other","reg_newRegistrationAppStatus_other3_o"
+"Type of Registration Forms Received","Other - Count 3","A3j","qa3j","reg_newRegistrationAppStatus_other3"
+"Type of Registration Forms Received","Comments","A3Comments","qa3comments","reg_newRegistrationAppStatus_c"
+"Total Registration Forms Received","Individual voters submitting applications by mail, fax, or 
+email","A4a","qa4a","reg_newRegistrationAppSource_mailFaxEmail"
+"Total Registration Forms Received","Individual voters registering in person at the election/registrar’s office","A4b","qa4b","reg_newRegistrationAppSource_inPerson"
+"Total Registration Forms Received","Individual voters submitting registration forms via web-based online registration system","A4c","qa4c","reg_newRegistrationAppSource_internet"
+"Total Registration Forms Received","Motor vehicle offices or other offices that issue driver's licenses (this would include automatic registration)","A4d","qa4d","reg_newRegistrationAppSource_DMV"
+"Total Registration Forms Received","Public assistance offices mandated as registration sites under NVRA","A4e","qa4e","reg_newRegistrationAppSource_publicAssist"
+"Total Registration Forms Received","State-funded agencies primarily serving persons with disabilities","A4f","qa4f","reg_newRegistrationAppSource_disability"
+"Total Registration Forms Received","Armed forces recruitment offices","A4g","qa4g","reg_newRegistrationAppSource_armedForcesRecruitment"
+"Total Registration Forms Received","Other agencies designated by the state not mandated by NVRA","A4h","qa4h","reg_newRegistrationAppSource_stateAgencies"
+"Total Registration Forms Received","Registration drives from advocacy groups or political parties","A4i","qa4i","reg_newRegistrationAppSource_advocacy"
+"Total Registration Forms Received","Other - Description Text 1","A4j_Other","qa4j_other","reg_newRegistrationAppSource_other1_o"
+"Total Registration Forms Received","Other - Count 1","A4j","qa4j","reg_newRegistrationAppSource_other1"
+"Total Registration Forms Received","Other - Description Text 2","A4k_Other","qa4k_other","reg_newRegistrationAppSource_other2_o"
+"Total Registration Forms Received","Other - Count 2","A4k","qa4k","reg_newRegistrationAppSource_other2"
+"Total Registration Forms Received","Other - Description Text 3","A4l_Other","qa4l_other","reg_newRegistrationAppSource_other3_o"
+"Total Registration Forms Received","Other - Count 3","A4l","qa4l","reg_newRegistrationAppSource_other3"
+"New Registrations","Individual voters submitting applications by mail, fax, or 
+email","A5a","qa5a","reg_newRegistrationSource_mailFaxEmail"
+"New Registrations","Individual voters registering in person at the election/registrar’s office","A5b","qa5b","reg_newRegistrationSource_inPerson"
+"New Registrations","Individual voters submitting registration forms via web-based online registration system","A5c","qa5c","reg_newRegistrationSource_internet"
+"New Registrations","Motor vehicle offices or other offices that issue driver's licenses (this would include automatic registration)","A5d","qa5d","reg_newRegistrationSource_DMV"
+"New Registrations","Public assistance offices mandated as registration sites under NVRA","A5e","qa5e","reg_newRegistrationSource_publicAssist"
+"New Registrations","State-funded agencies primarily serving persons with disabilities","A5f","qa5f","reg_newRegistrationSource_disability"
+"New Registrations","Armed forces recruitment offices","A5g","qa5g","reg_newRegistrationSource_armedForcesRecruitment"
+"New Registrations","Other agencies designated by the state not mandated by NVRA","A5h","qa5h","reg_newRegistrationSource_stateAgencies"
+"New Registrations","Registration drives from advocacy groups or political parties","A5i","qa5i","reg_newRegistrationSource_advocacy"
+"New Registrations","Other - Description Text 1","A5j_Other","qa5j_other","reg_newRegistrationSource_other1_o"
+"New Registrations","Other - Count 1","A5j","qa5j","reg_newRegistrationSource_other1"
+"New Registrations","Other - Description Text 2","A5k_Other","qa5k_other","reg_newRegistrationSource_other2_o"
+"New Registrations","Other - Count 2","A5k","qa5k","reg_newRegistrationSource_other2"
+"New Registrations","Other - Description Text 3","A5l_Other","qa5l_other","reg_newRegistrationSource_other3_o"
+"New Registrations","Other - Count 3","A5l","qa5l","reg_newRegistrationSource_other3"
+"Duplicate Registrations","Individual voters submitting applications by mail, fax, or 
+email","A6a","qa6a","reg_duplicateRegistrationSource_mailFaxEmail"
+"Duplicate Registrations","Individual voters registering in person at the election/registrar’s office","A6b","qa6b","reg_duplicateRegistrationSource_inPerson"
+"Duplicate Registrations","Individual voters submitting registration forms via web-based online registration system","A6c","qa6c","reg_duplicateRegistrationSource_internet"
+"Duplicate Registrations","Motor vehicle offices or other offices that issue driver's licenses (this would include automatic registration)","A6d","qa6d","reg_duplicateRegistrationSource_DMV"
+"Duplicate Registrations","Public assistance offices mandated as registration sites under NVRA","A6e","qa6e","reg_duplicateRegistrationSource_publicAssist"
+"Duplicate Registrations","State-funded agencies primarily serving persons with disabilities","A6f","qa6f","reg_duplicateRegistrationSource_disability"
+"Duplicate Registrations","Armed forces recruitment offices","A6g","qa6g","reg_duplicateRegistrationSource_armedForcesRecruitment"
+"Duplicate Registrations","Other agencies designated by the state not mandated by NVRA","A6h","qa6h","reg_duplicateRegistrationSource_stateAgencies"
+"Duplicate Registrations","Registration drives from advocacy groups or political parties","A6i","qa6i","reg_duplicateRegistrationSource_advocacy"
+"Duplicate Registrations","Other - Description Text 1","A6j_Other","qa6j_other","reg_duplicateRegistrationSource_other1_o"
+"Duplicate Registrations","Other - Count 1","A6j","qa6j","reg_duplicateRegistrationSource_other1"
+"Duplicate Registrations","Other - Description Text 2","A6k_Other","qa6k_other","reg_duplicateRegistrationSource_other2_o"
+"Duplicate Registrations","Other - Count 2","A6k","qa6k","reg_duplicateRegistrationSource_other2"
+"Duplicate Registrations","Other - Description Text 3","A6l_Other","qa6l_other","reg_duplicateRegistrationSource_other3_o"
+"Duplicate Registrations","Other - Count 3","A6l","qa6l","reg_duplicateRegistrationSource_other3"
+"Invalid or Rejected Registrations","Individual voters submitting applications by mail, fax, or 
+email","A7a","qa7a","reg_rejectedRegistrationSource_mailFaxEmail"
+"Invalid or Rejected Registrations","Individual voters registering in person at the election/registrar’s office","A7b","qa7b","reg_rejectedRegistrationSource_inPerson"
+"Invalid or Rejected Registrations","Individual voters submitting registration forms via web-based online registration system","A7c","qa7c","reg_rejectedRegistrationSource_internet"
+"Invalid or Rejected Registrations","Motor vehicle offices or other offices that issue driver's licenses (this would include automatic registration)","A7d","qa7d","reg_rejectedRegistrationSource_DMV"
+"Invalid or Rejected Registrations","Public assistance offices mandated as registration sites under NVRA","A7e","qa7e","reg_rejectedRegistrationSource_publicAssist"
+"Invalid or Rejected Registrations","State-funded agencies primarily serving persons with disabilities","A7f","qa7f","reg_rejectedRegistrationSource_disability"
+"Invalid or Rejected Registrations","Armed forces recruitment offices","A7g","qa7g","reg_rejectedRegistrationSource_armedForcesRecruitment"
+"Invalid or Rejected Registrations","Other agencies designated by the state not mandated by NVRA","A7h","qa7h","reg_rejectedRegistrationSource_stateAgencies"
+"Invalid or Rejected Registrations","Registration drives from advocacy groups or political parties","A7i","qa7i","reg_rejectedRegistrationSource_advocacy"
+"Invalid or Rejected Registrations","Other - Description Text 1","A7j_Other","qa7j_other","reg_rejectedRegistrationSource_other1_o"
+"Invalid or Rejected Registrations","Other - Count 1","A7j","qa7j","reg_rejectedRegistrationSource_other1"
+"Invalid or Rejected Registrations","Other - Description Text 2","A7k_Other","qa7k_other","reg_rejectedRegistrationSource_other2_o"
+"Invalid or Rejected Registrations","Other - Count 2","A7k","qa7k","reg_rejectedRegistrationSource_other2"
+"Invalid or Rejected Registrations","Other - Description Text 3","A7l_Other","qa7l_other","reg_rejectedRegistrationSource_other3_o"
+"Invalid or Rejected Registrations","Other - Count 3","A7l","qa7l","reg_rejectedRegistrationSource_other3"
+"Invalid or Rejected Registrations","Comments","A4-A7Comments","qa4-a7comments","qa4-a7comments"
+"Confirmation Notices","TOTAL number of confirmation notices sent to registered voters","A8a","qa8a","reg_confirmationNotice_total"
+"Confirmation Notices","Received back from voters confirming registration","A8b","qa8b","reg_confirmationNotice_valid"
+"Confirmation Notices","Received back confirming registration should be invalidated","A8c","qa8c","reg_confirmationNotice_invalid"
+"Confirmation Notices","Returned back as undeliverable","A8d","qa8d","reg_confirmationNotice_undeliverable"
+"Confirmation Notices","Status unknown (neither received confirmation nor returned undeliverable)","A8e","qa8e","reg_confirmationNotice_unknown"
+"Confirmation Notices","Other - Description Text 1","A8f_Other","qa8f_other","reg_confirmationNotice_other1_o"
+"Confirmation Notices","Other - Count 1","A8f","qa8f","reg_confirmationNotice_other1"
+"Confirmation Notices","Other - Description Text 2","A8g_Other","qa8g_other","reg_confirmationNotice_other2_o"
+"Confirmation Notices","Other - Count 2","A8g","qa8g","reg_confirmationNotice_other2"
+"Confirmation Notices","Other - Description Text 3","A8h_Other","qa8h_other","reg_confirmationNotice_other3_o"
+"Confirmation Notices","Other - Count 3","A8h","qa8h","reg_confirmationNotice_other3"
+"Confirmation Notices","Comments","A8Comments","qa8comments","reg_confirmationNotice_c"
+"Removals from Registration Rolls","TOTAL number of voters removed","A9a","qa9a","reg_voterRemovedReason_total"
+"Removals from Registration Rolls","Moved outside jurisdiction","A9b","qa9b","reg_voterRemovedReason_moved"
+"Removals from Registration Rolls","Death","A9c","qa9c","reg_voterRemovedReason_death"
+"Removals from Registration Rolls","Disqualifying felony conviction","A9d","qa9d","reg_voterRemovedReason_felony"
+"Removals from Registration Rolls","Failure to respond to notice sent and failure to vote in two most recent federal elections ","A9e","qa9e","reg_voterRemovedReason_noResponse"
+"Removals from Registration Rolls","Declared mentally incompetent","A9f","qa9f","reg_voterRemovedReason_mentalIncompetence"
+"Removals from Registration Rolls","Voter request to be removed for reasons other than those listed above","A9g","qa9g","reg_voterRemovedReason_voterRequest"
+"Removals from Registration Rolls","Other - Description Text 1","A9h_Other","qa9h_other","reg_voterRemovedReason_other1_o"
+"Removals from Registration Rolls","Other - Count 1","A9h","qa9h","reg_voterRemovedReason_other1"
+"Removals from Registration Rolls","Other - Description Text 2","A9i_Other","qa9i_other","reg_voterRemovedReason_other2_o"
+"Removals from Registration Rolls","Other - Count 2","A9i","qa9i","reg_voterRemovedReason_other2"
+"Removals from Registration Rolls","Other - Description Text 3","A9j_Other","qa9j_other","reg_voterRemovedReason_other3_o"
+"Removals from Registration Rolls","Other - Count 3","A9j","qa9j","reg_voterRemovedReason_other3"
+"Removals from Registration Rolls","Comments","A9Comments","qa9comments","reg_voterRemovedReason"
+"Total Registered and Eligible UOCAVA Voters","TOTAL registered and eligible","B1a","qb1a","uocava_uocavaRegistered_total"
+"Total Registered and Eligible UOCAVA Voters","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B1b","qb1b","uocava_uocavaRegistered_uniform"
+"Total Registered and Eligible UOCAVA Voters","Non-military/civilian overseas voters","B1c","qb1c","uocava_uocavaRegistered_nonMil"
+"Total Registered and Eligible UOCAVA Voters","Comments","B1Comments","qb1comments","uocava_uocavaRegistered_c"
+"Federal Post Card Applications (FPCAs) Received","TOTAL Federal Post Card Applications (FPCAs) from UOCAVA voters","B2a","qb2a","uocava_fpcaApplications_total"
+"Federal Post Card Applications (FPCAs) Received","Uniformed Services voters (and their eligible dependents)-domestic or foreign","B2b","qb2b","uocava_fpcaApplications_uniform"
+"Federal Post Card Applications (FPCAs) Received","Non-military/civilian overseas voters","B2c","qb2c","uocava_fpcaApplications_nonMil"
+"Federal Post Card Applications (FPCAs) Received","Comments","B2Comments","qb2comments","uocava_fpcaApplications_c"
+"FPCAs Rejected","TOTAL REJECTED Federal Post Card Applications (FPCAs) from all UOCAVA voters","B3a","qb3a","uocava_fpcaReject_total"
+"FPCAs Rejected","REJECTED FPCAs received from Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B3b","qb3b","uocava_fpcaReject_uniform"
+"FPCAs Rejected","REJECTED FPCAs received from non-military/civilian overseas voters","B3c","qb3c","uocava_fpcaReject_nonMil"
+"FPCAs Rejected","Comments","B3Comments","qb3comments","uocava_fpcaReject_c"
+"FPCAs Rejected Because Late","TOTAL FCPAs rejected because late","B4a","qb4a","uocava_fpcaRejectLate"
+"FPCAs Rejected Because Late","Comments","B4Comments","qb4comments","uocava_fpcaRejectLate_c"
+"Total Absentee Ballots Transmitted to UOCAVA Voters","TOTAL","B5a","qb5a","uocava_uocavaTransmit_total"
+"Total Absentee Ballots Transmitted to UOCAVA Voters","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B5b","qb5b","uocava_uocavaTransmit_uniform"
+"Total Absentee Ballots Transmitted to UOCAVA Voters","Non-military/civilian overseas voters","B5c","qb5c","uocava_uocavaTransmit_nonMil"
+"UOCAVA Ballots Transmitted to Voters - Postal Mail","TOTAL","B6a","qb6a","uocava_uocavaTransmitMail_total"
+"UOCAVA Ballots Transmitted to Voters - Postal Mail","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B6b","qb6b","uocava_uocavaTransmitMail_uniform"
+"UOCAVA Ballots Transmitted to Voters - Postal Mail","Non-military/civilian overseas voters","B6c","qb6c","uocava_uocavaTransmitMail_nonMil"
+"UOCAVA Ballots Transmitted to Voters - Email","TOTAL","B7a","qb7a","uocava_uocavaTransmitEmail_total"
+"UOCAVA Ballots Transmitted to Voters - Email","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B7b","qb7b","uocava_uocavaTransmitEmail_uniform"
+"UOCAVA Ballots Transmitted to Voters - Email","Non-military/civilian overseas voters","B7c","qb7c","uocava_uocavaTransmitEmail_nonMil"
+"UOCAVA Ballots Transmitted to Voters - Other Mode","TOTAL","B8a","qb8a","uocava_uocavaTransmitother_total"
+"UOCAVA Ballots Transmitted to Voters - Other Mode","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B8b","qb8b","uocava_uocavaTransmitother_uniform"
+"UOCAVA Ballots Transmitted to Voters - Other Mode","Non-military/civilian overseas voters","B8c","qb8c","uocava_uocavaTransmitother_nonMil"
+"UOCAVA Ballots Transmitted to Voters - Other Mode","Comments","B5-B8Comments","qb5-b8comments","qb5-b8comments"
+"Total Transmitted UOCAVA Ballots Returned by Voters","TOTAL","B9a","qb9a","uocava_uocavaAloneReturn_total"
+"Total Transmitted UOCAVA Ballots Returned by Voters","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B9b","qb9b","uocava_uocavaAloneReturn_uniform"
+"Total Transmitted UOCAVA Ballots Returned by Voters","Non-military/civilian overseas voters","B9c","qb9c","uocava_uocavaAloneReturn_nonMil"
+"UOCAVA Ballots Returned by Voters - Postal Mail","TOTAL","B10a","qb10a","uocava_uocavaAloneReturnMail_total"
+"UOCAVA Ballots Returned by Voters - Postal Mail","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B10b","qb10b","uocava_uocavaAloneReturnMail_uniform"
+"UOCAVA Ballots Returned by Voters - Postal Mail","Non-military/civilian overseas voters","B10c","qb10c","uocava_uocavaAloneReturnMail_nonMil"
+"UOCAVA Ballots Returned by Voters - Email","TOTAL","B11a","qb11a","uocava_uocavaAloneReturnEmail_total"
+"UOCAVA Ballots Returned by Voters - Email","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B11b","qb11b","uocava_uocavaAloneReturnEmail_uniform"
+"UOCAVA Ballots Returned by Voters - Email","Non-military/civilian overseas voters","B11c","qb11c","uocava_uocavaAloneReturnEmail_nonMil"
+"UOCAVA Ballots Returned by Voters - Other Mode","TOTAL","B12a","qb12a","uocava_uocavaAloneReturnother_total"
+"UOCAVA Ballots Returned by Voters - Other Mode","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B12b","qb12b","uocava_uocavaAloneReturnother_uniform"
+"UOCAVA Ballots Returned by Voters - Other Mode","Non-military/civilian overseas voters","B12c","qb12c","uocava_uocavaAloneReturnother_nonMil"
+"UOCAVA Ballots Returned by Voters - Other Mode","Comments","B9-B12Comments","qb9-b12comments","qb9-b12comments"
+"Total UOCAVA Ballots Returned Undeliverable","TOTAL","B13a","qb13a","uocava_uocavaAloneUndeliverable_total"
+"Total UOCAVA Ballots Returned Undeliverable","Postal mail undeliverable","B13b","qb13b","uocava_uocavaAloneUndeliverable_mail"
+"Total UOCAVA Ballots Returned Undeliverable","Email undeliverable","B13c","qb13c","uocava_uocavaAloneUndeliverable_email"
+"Total UOCAVA Ballots Returned Undeliverable","Other mode undeliverable","B13d","qb13d","uocava_uocavaAloneUndeliverable_other"
+"Total UOCAVA Ballots Returned Undeliverable","Comments","B13Comments","qb13comments","uocava_uocavaAloneUndeliverable_c"
+"Total UOCAVA Ballots Counted","Total","B14a","qb14a","uocava_uocavaAloneCount_total"
+"Total UOCAVA Ballots Counted","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B14b","qb14b","uocava_uocavaAloneCount_uniform"
+"Total UOCAVA Ballots Counted","Non-military/civilian overseas voters","B14c","qb14c","uocava_uocavaAloneCount_nonMil"
+"UOCAVA Ballots Counted - Postal Mail","TOTAL","B15a","qb15a","uocava_uocavaAloneCountMail_total"
+"UOCAVA Ballots Counted - Postal Mail","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B15b","qb15b","uocava_uocavaAloneCountMail_uniform"
+"UOCAVA Ballots Counted - Postal Mail","Non-military/civilian overseas voters","B15c","qb15c","uocava_uocavaAloneCountMail_nonMil"
+"UOCAVA Ballots Counted - Email","TOTAL","B16a","qb16a","uocava_uocavaAloneCountEmail_total"
+"UOCAVA Ballots Counted - Email","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B16b","qb16b","uocava_uocavaAloneCountEmail_uniform"
+"UOCAVA Ballots Counted - Email","Non-military/civilian overseas voters","B16c","qb16c","uocava_uocavaAloneCountEmail_nonMil"
+"UOCAVA Ballots Counted - Other Mode","TOTAL","B17a","qb17a","uocava_uocavaAloneCountother_total"
+"UOCAVA Ballots Counted - Other Mode","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B17b","qb17b","uocava_uocavaAloneCountother_uniform"
+"UOCAVA Ballots Counted - Other Mode","Non-military/civilian overseas voters","B17c","qb17c","uocava_uocavaAloneCountother_nonMil"
+"UOCAVA Ballots Counted - Other Mode","Comments","B14-B17Comments","qb14-b17comments","qb14-b17comments"
+"UOCAVA Ballots Rejected","TOTAL","B18a","qb18a","uocava_uocavaAloneReject_total"
+"UOCAVA Ballots Rejected","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B18b","qb18b","uocava_uocavaAloneReject_uniform"
+"UOCAVA Ballots Rejected","Non-military/civilian overseas voters","B18c","qb18c","uocava_uocavaAloneReject_nonMil"
+"UOCAVA Ballots Rejected - Missed Deadline","TOTAL","B19a","qb19a","uocava_uocavaAloneRejectLate_total"
+"UOCAVA Ballots Rejected - Missed Deadline","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B19b","qb19b","uocava_uocavaAloneRejectLate_uniform"
+"UOCAVA Ballots Rejected - Missed Deadline","Non-military/civilian overseas voters","B19c","qb19c","uocava_uocavaAloneRejectLate_nonMil"
+"UOCAVA Ballots Rejected - Problem with Voter Signature","TOTAL","B20a","qb20a","uocava_uocavaAloneRejectSignature_total"
+"UOCAVA Ballots Rejected - Problem with Voter Signature","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B20b","qb20b","uocava_uocavaAloneRejectSignature_uniform"
+"UOCAVA Ballots Rejected - Problem with Voter Signature","Non-military/civilian overseas voters","B20c","qb20c","uocava_uocavaAloneRejectSignature_nonMil"
+"UOCAVA Ballots Rejected - Lacked a Postmark","TOTAL","B21a","qb21a","uocava_uocavaAloneRejectNoPost_total"
+"UOCAVA Ballots Rejected - Lacked a Postmark","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B21b","qb21b","uocava_uocavaAloneRejectNoPost_uniform"
+"UOCAVA Ballots Rejected - Lacked a Postmark","Non-military/civilian overseas voters","B21c","qb21c","uocava_uocavaAloneRejectNoPost_nonMil"
+"UOCAVA Ballots Rejected - Other","Other - Description Text","B22_Other","qb22_other","uocava_uocavaAloneRejectOther_o"
+"UOCAVA Ballots Rejected - Other","TOTAL","B22a","qb22a","uocava_uocavaAloneRejectOther_total"
+"UOCAVA Ballots Rejected - Other","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B22b","qb22b","uocava_uocavaAloneRejectOther_uniform"
+"UOCAVA Ballots Rejected - Other","Non-military/civilian overseas voters","B22c","qb22c","uocava_uocavaAloneRejectOther_nonMil"
+"UOCAVA Ballots Rejected - Other","Comments","B18-B22Comments","qb18-b22comments","qb18-b22comments"
+"Total Federal Write-in Absentee Ballots (FWABs) Received","TOTAL","B23a","qb23a","uocava_fwabReturn_total"
+"Total Federal Write-in Absentee Ballots (FWABs) Received","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B23b","qb23b","uocava_fwabReturn_uniform"
+"Total Federal Write-in Absentee Ballots (FWABs) Received","Non-military/civilian overseas voters","B23c","qb23c","uocava_fwabReturn_nonMil"
+"Total FWABs Counted","TOTAL","B24a","qb24a","uocava_fwabCount_total"
+"Total FWABs Counted","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B24b","qb24b","uocava_fwabCount_uniform"
+"Total FWABs Counted","Non-military/civilian overseas voters","B24c","qb24c","uocava_fwabCount_nonMil"
+"FWABs Rejected - Received After Deadline","TOTAL","B25a","qb25a","uocava_fwabRejectLate_total"
+"FWABs Rejected - Received After Deadline","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B25b","qb25b","uocava_fwabRejectLate_uniform"
+"FWABs Rejected - Received After Deadline","Non-military/civilian overseas voters","B25c","qb25c","uocava_fwabRejectLate_nonMil"
+"FWABs Rejected - Regular Absentee Ballot was Received and Counted","TOTAL","B26a","qb26a","uocava_fwabRejectVoted_total"
+"FWABs Rejected - Regular Absentee Ballot was Received and Counted","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B26b","qb26b","uocava_fwabRejectVoted_uniform"
+"FWABs Rejected - Regular Absentee Ballot was Received and Counted","Non-military/civilian overseas voters","B26c","qb26c","uocava_fwabRejectVoted_nonMil"
+"FWABs Rejected - Other","Other - Description Text","B27_Other","qb27_other","uocava_fwabRejectOther_o"
+"FWABs Rejected - Other","TOTAL","B27a","qb27a","uocava_fwabRejectOther_total"
+"FWABs Rejected - Other","Uniformed Services voters (members of the Uniformed Services and their eligible dependents)-domestic or foreign","B27b","qb27b","uocava_fwabRejectOther_uniform"
+"FWABs Rejected - Other","Non-military/civilian overseas voters","B27c","qb27c","uocava_fwabRejectOther_nonMil"
+"FWABs Rejected - Other","Comments","B23-B27Comments","qb23-b27comments","qb23-b27comments"
+"Total Domestic By-Mail Ballots Transmitted","TOTAL domestic by-mail ballots transmitted","C1a","qc1a","mail_absenteeTransmit_total"
+"Total Domestic By-Mail Ballots Transmitted","Returned by voters","C1b","qc1b","mail_absenteeTransmitStatus_returnByVoter"
+"Total Domestic By-Mail Ballots Transmitted","Returned as undeliverable","C1c","qc1c","mail_absenteeTransmitStatus_undeliv"
+"Total Domestic By-Mail Ballots Transmitted","Surrendered, spoiled or replaced ballots","C1d","qc1d","mail_absenteeTransmitStatus_spoiled"
+"Total Domestic By-Mail Ballots Transmitted","By-mail voters who voted in-person with a provisional ballot","C1e","qc1e","mail_absenteeTransmitStatus_votedProvisionally"
+"Total Domestic By-Mail Ballots Transmitted","Status unknown","C1f","qc1f","mail_absenteeTransmitStatus_unknown"
+"Total Domestic By-Mail Ballots Transmitted","Other - Description Text 1","C1g_Other","qc1g_other","mail_absenteeTransmitStatus_other1_o"
+"Total Domestic By-Mail Ballots Transmitted","Other - Count 1","C1g","qc1g","mail_absenteeTransmitStatus_other1"
+"Total Domestic By-Mail Ballots Transmitted","Other - Description Text 2","C1h_Other","qc1h_other","mail_absenteeTransmitStatus_other2_o"
+"Total Domestic By-Mail Ballots Transmitted","Other - Count 2","C1h","qc1h","mail_absenteeTransmitStatus_other2"
+"Total Domestic By-Mail Ballots Transmitted","Other - Description Text 3","C1i_Other","qc1i_other","mail_absenteeTransmitStatus_other3_o"
+"Total Domestic By-Mail Ballots Transmitted","Other - Count 3","C1i","qc1i","mail_absenteeTransmitStatus_other3"
+"Total Domestic By-Mail Ballots Transmitted","Comments","C1Comments","qc1comments","mail_absenteeTransmitStatus_c"
+"Ballots Sent to Permanent By-Mail Voters","TOTAL number of domestic civilian by-mail ballots transmitted to voters on a permanent  by-mail ballot voter registration list","C2a","qc2a","mail_permanentAbsenteeBallotsTransmitted"
+"Ballots Sent to Permanent By-Mail Voters","Comments","C2Comments","qc2comments","mail_permanentAbsenteeBallotsTransmitted_c"
+"Total Number of By-Mail Ballots Returned and Counted","TOTAL returned and counted","C3a","qc3a","mail_absenteeBallotsCounted"
+"Total Number of By-Mail Ballots Returned and Counted","Comments","C3Comments","qc3comments","mail_absenteeCounted_c"
+"Total By-Mail Ballots Rejected by Reason Rejected","TOTAL number of domestic civilian by-mail ballots rejected","C4a","qc4a","mail_absenteeRejectReason_total"
+"Total By-Mail Ballots Rejected by Reason Rejected","Ballot not received on time/missed deadline","C4b","qc4b","mail_absenteeRejectReason_late"
+"Total By-Mail Ballots Rejected by Reason Rejected","No voter signature","C4c","qc4c","mail_absenteeRejectReason_noSig"
+"Total By-Mail Ballots Rejected by Reason Rejected","No witness signature","C4d","qc4d","mail_absenteeRejectReason_noWitnessSig"
+"Total By-Mail Ballots Rejected by Reason Rejected","Non-matching signature","C4e","qc4e","mail_absenteeRejectReason_noSigMatch"
+"Total By-Mail Ballots Rejected by Reason Rejected","No election official's signature on ballot","C4f","qc4f","mail_absenteeRejectReason_noEoSig"
+"Total By-Mail Ballots Rejected by Reason Rejected","Ballot returned in an unofficial envelope","C4g","qc4g","mail_absenteeRejectReason_unofficialEnvelope"
+"Total By-Mail Ballots Rejected by Reason Rejected","Ballet missing from envelope","C4h","qc4h","mail_absenteeRejectReason_ballotMissing"
+"Total By-Mail Ballots Rejected by Reason Rejected","Envelope not sealed","C4i","qc4i","mail_absenteeRejectReason_envelopeNotSealed"
+"Total By-Mail Ballots Rejected by Reason Rejected","No resident address on envelope","C4j","qc4j","mail_absenteeRejectReason_noEnvelopeAddress"
+"Total By-Mail Ballots Rejected by Reason Rejected","Multiple ballots returned in one envelope","C4k","qc4k","mail_absenteeRejectReason_multipleBallotsOneEnvelope"
+"Total By-Mail Ballots Rejected by Reason Rejected","Voter deceased","C4l","qc4l","mail_absenteeRejectReason_voterDeceased"
+"Total By-Mail Ballots Rejected by Reason Rejected","Voter already voted in person","C4m","qc4m","mail_absenteeRejectReason_votedInPerson"
+"Total By-Mail Ballots Rejected by Reason Rejected","First-time voter without proper identification","C4n","qc4n","mail_absenteeRejectReason_noIdentification"
+"Total By-Mail Ballots Rejected by Reason Rejected","No ballot application on record","C4o","qc4o","mail_absenteeRejectReason_noBallotApplication"
+"Total By-Mail Ballots Rejected by Reason Rejected","Other - Description Text 1","C4p_Other","qc4p_other","mail_absenteeRejectReason_other1_o"
+"Total By-Mail Ballots Rejected by Reason Rejected","Other - Count 1","C4p","qc4p","mail_absenteeRejectReason_other1"
+"Total By-Mail Ballots Rejected by Reason Rejected","Other - Description Text 2","C4q_Other","qc4q_other","mail_absenteeRejectReason_other2_o"
+"Total By-Mail Ballots Rejected by Reason Rejected","Other - Count 2","C4q","qc4q","mail_absenteeRejectReason_other2"
+"Total By-Mail Ballots Rejected by Reason Rejected","Other - Description Text 3","C4r_Other","qc4r_other","mail_absenteeRejectReason_other3_o"
+"Total By-Mail Ballots Rejected by Reason Rejected","Other - Count 3","C4r","qc4r","mail_absenteeRejectReason_other3"
+"Total By-Mail Ballots Rejected by Reason Rejected","Comments","C4Comments","qc4comments","mail_absenteeRejectReason_c"
+"Total In-Person Voting","Voted at a physical polling place on Election Day","D1a","qd1a","inperson_ballotsCast_electionDay"
+"Total In-Person Voting","Voted at an early vote location","D1b","qd1b","inperson_ballotsCast_early"
+"Total In-Person Voting","Comments","D1Comments","qd1comments","inperson_ballotsCast_c"
+"Total Number of Precincts","TOTAL number of precincts in your jurisdiction for the November 2018 general election","D2a","qd2a","inperson_precinctCount"
+"Total Number of Precincts","Comments","D2Comments","qd2comments","inperson_precinctCount_c"
+"Total Number of Physical Polling Places - Election Day Voting","TOTAL","D3a","qd3a","inperson_pollingPlaces_electionDay_total"
+"Total Number of Physical Polling Places - Election Day Voting","Physical polling places other than election officers (e.g. libraries, schools, mobile voting, location)","D3b","qd3b","inperson_pollingPlaces_electionDay_standard"
+"Total Number of Physical Polling Places - Election Day Voting","Election offices","D3c","qd3c","inperson_pollingPlaces_electionDay_electionOffices"
+"Total Number of Physical Polling Places - Early Voting","TOTAL","D4a","qd4a","inperson_pollingPlaces_early_total"
+"Total Number of Physical Polling Places - Early Voting","Physical polling places other than election officers (e.g. libraries, schools, mobile voting, location)","D4b","qd4b","inperson_pollingPlaces_early_standard"
+"Total Number of Physical Polling Places - Early Voting","Election offices","D4c","qd4c","inperson_pollingPlaces_early_electionOffices"
+"Total Number of Physical Polling Places - Early Voting","Comments","D3-D4Comments","qd3-d4comments","qd3-d4comments"
+"Total Number of Poll Workers","Total Number of Poll Workers - Election Day Voting","D5","qd5","inperson_pollWorkers_electionDay"
+"Total Number of Poll Workers","Total Number of Poll Workers - Early Voting","D6","qd6","inperson_pollWorkers_early"
+"Total Number of Poll Workers","Comments","D5-D6Comments","qd5-d6comments","qd5-d6comments"
+"Age of Poll Workers","TOTAL number of poll workers","D7a","qd7a","inperson_pollWorkers_total"
+"Age of Poll Workers","Under 18 years old","D7b","qd7b","inperson_pollWorkers_under18"
+"Age of Poll Workers","18 to 25","D7c","qd7c","inperson_pollWorkers_18to25"
+"Age of Poll Workers","26 to 40","D7d","qd7d","inperson_pollWorkers_26to40"
+"Age of Poll Workers","41 to 60","D7e","qd7e","inperson_pollWorkers_41to60"
+"Age of Poll Workers","61 to 70","D7f","qd7f","inperson_pollWorkers_61to70"
+"Age of Poll Workers","71 years old and over","D7g","qd7g","inperson_pollWorkers_71AndOlder"
+"Age of Poll Workers","Comments","D7Comments","qd7comments","inperson_pollWorkers_c"
+"Ease of Recruiting Poll Workers","Pull Down Menu (Very Difficult, Somewhat Difficult, Neither Difficult nor Easy, Somewhat Easy, Very Easy, Not Enough Information to Answer)","D8","qd8","inperson_difficultyRecruitingPollWorkers"
+"Ease of Recruiting Poll Workers","Comments","D8Comments","qd8comments","inperson_difficultyRecruitingPollWorkers_c"
+"Provisional Ballots","TOTAL number of voters who submitted provisional ballots","E1a","qe1a","prov_provisionalCast_total"
+"Provisional Ballots","Counted the full ballot","E1b","qe1b","prov_provisionalCast_fullCount"
+"Provisional Ballots","Counted part of the ballot","E1c","qe1c","prov_provisionalCast_partialCount"
+"Provisional Ballots","Rejected ballot","E1d","qe1d","prov_provisionalCast_rejected"
+"Provisional Ballots","Other - Description Text 1","E1e_Other","qe1e_other","prov_provisionalCast_other1_o"
+"Provisional Ballots","Other - Count 1","E1e","qe1e","prov_provisionalCast_other1"
+"Provisional Ballots","Comments","E1Comments","qe1comments","prov_provisionalCast_c"
+"Reason for Provisional Ballot Rejection","TOTAL number of domestic civilian by-mail ballots rejected","E2a","qe2a","prov_provisionalRejectReason_total"
+"Reason for Provisional Ballot Rejection","Voter not registered in the state","E2b","qe2b","prov_provisionalRejectReason_notRegistered"
+"Reason for Provisional Ballot Rejection","Voter registered in state but attempted to vote in the wrong jurisdiction","E2c","qe2c","prov_provisionalRejectReason_wrongJurisdiction"
+"Reason for Provisional Ballot Rejection","Voter registered in state but attempted to vote in the wrong precinct","E2d","qe2d","prov_provisionalRejectReason_wrongPrecinct"
+"Reason for Provisional Ballot Rejection","Failure to provide sufficient identification","E2e","qe2e","prov_provisionalRejectReason_noIdentification"
+"Reason for Provisional Ballot Rejection","Envelope and/or ballot was incompete and/or illegible","E2f","qe2f","prov_provisionalRejectReason_incompleteEnvelope"
+"Reason for Provisional Ballot Rejection","Ballot missing from envelope","E2g","qe2g","prov_provisionalRejectReason_ballotMissing"
+"Reason for Provisional Ballot Rejection","No signature","E2h","qe2h","prov_provisionalRejectReason_noSig"
+"Reason for Provisional Ballot Rejection","Non-matching signature","E2i","qe2i","prov_provisionalRejectReason_noSigMatch"
+"Reason for Provisional Ballot Rejection","Voter already voted","E2j","qe2j","prov_provisionalRejectReason_alreadyVoted"
+"Reason for Provisional Ballot Rejection","Other - Description Text 1","E2k_Other","qe2k_other","prov_provisionalRejectReason_other1_o"
+"Reason for Provisional Ballot Rejection","Other - Count 1","E2k","qe2k","prov_provisionalRejectReason_other1"
+"Reason for Provisional Ballot Rejection","Other - Description Text 2","E2l_Other","qe2l_other","prov_provisionalRejectReason_other2_o"
+"Reason for Provisional Ballot Rejection","Other - Count 2","E2l","qe2l","prov_provisionalRejectReason_other2"
+"Reason for Provisional Ballot Rejection","Other - Description Text 3","E2m_Other","qe2m_other","prov_provisionalRejectReason_other3_o"
+"Reason for Provisional Ballot Rejection","Other - Count 3","E2m","qe2m","prov_provisionalRejectReason_other3"
+"Reason for Provisional Ballot Rejection","Comments","E2Comments","qe2comments","prov_provisionalRejectReason_c"
+"Total Votes Cast and Counted in the 2018 Election","TOTAL number of votes cast and counted","F1a","qf1a","partic_voterParticipation_total"
+"Total Votes Cast and Counted in the 2018 Election","Voted at a physical polling place on Election Day","F1b","qf1b","partic_voterParticipation_pollingPlaceED"
+"Total Votes Cast and Counted in the 2018 Election","UOCAVA voters who voted via absentee or FWAB","F1c","qf1c","partic_voterParticipation_uocava"
+"Total Votes Cast and Counted in the 2018 Election","Voted using a domestic civilian by-mail ballot","F1d","qf1d","partic_voterParticipation_voteByMail"
+"Total Votes Cast and Counted in the 2018 Election","Voted using a provisional ballot","F1e","qf1e","partic_voterParticipation_provisional"
+"Total Votes Cast and Counted in the 2018 Election","Voted at an in-person early voting location","F1f","qf1f","partic_voterParticipation_inPersonEarly"
+"Total Votes Cast and Counted in the 2018 Election","Voted by mail in a vote by mail jurisdiction","F1g","qf1g","partic_voterParticipation_voteByMailAllMailJurisdiction"
+"Total Votes Cast and Counted in the 2018 Election","Other - Description Text 1","F1h_Other","qf1h_other","partic_voterParticipation_other1_o"
+"Total Votes Cast and Counted in the 2018 Election","Other - Count 1","F1h","qf1h","partic_voterParticipation_other1"
+"Total Votes Cast and Counted in the 2018 Election","Comments","F1Comments","qf1comments","partic_voterParticipation_c"
+"Source of Participation Data (Select One)","Pull Down Menu (Poll Books and Number of By-mail/Provisional Participants, Number of Ballots Counted, Vote History, Votes Cast, Other)","F2","qf2","partic_voterParticipationSource"
+"Source of Participation Data (Select One)","Other - Description Text 1","F2_Other","qf2_other","partic_voterParticipationSource_o"
+"Source of Participation Data (Select One)","Comments","F2Comments","qf2comments","partic_voterParticipationSource_c"
+"Use of Electronic Poll Books","Sign voters in (Yes/No)","F3a","qf3a","partic_pollBookUsage_electronic_signIn"
+"Use of Electronic Poll Books","Update voter history (Yes/No)","F3b","qf3b","partic_pollBookUsage_electronic_updateVoterHistory"
+"Use of Electronic Poll Books","Look up polling places (Yes/No)","F3c","qf3c","partic_pollBookUsage_electronic_lookUpPollingPlace"
+"Use of Electronic Poll Books","Other - Description Text 1","F3d_Other","qf3d_other","partic_pollBookUsage_electronic_other_o"
+"Use of Electronic Poll Books","Other (Yes/No)","F3d","qf3d","partic_pollBookUsage_electronic_other"
+"Use of Paper Poll Books","Sign voters in (Yes/No)","F4a","qf4a","partic_pollBookUsage_paper_signIn"
+"Use of Paper Poll Books","Update voter history (Yes/No)","F4b","qf4b","partic_pollBookUsage_paper_updateVoterHistory"
+"Use of Paper Poll Books","Look up polling places (Yes/No)","F4c","qf4c","partic_pollBookUsage_paper_lookUpPollingPlace"
+"Use of Paper Poll Books","Other - Description Text 1","F4d_Other","qf4d_other","partic_pollBookUsage_paper_other_o"
+"Use of Paper Poll Books","Other (Yes/No)","F4d","qf4d","partic_pollBookUsage_paper_other"
+"Use of Paper Poll Books","Comments","F3-F4Comments","qf3-f4comments","qf3-f4comments"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Did your jurisdiction use any DRE with no VVPAT for the 2018 Election? - PULL DOWN
+(Yes/No)","F5a","qf5a","partic_votingEquipment_DRE"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Make / Model DRE w/o VVPAT_1 - PULL DOWN
+(Pull down with all make/model options for DRE w/o VVPATs)","F5b_1","qf5b_1","partic_votingEquipment_DRE_make1"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Make/Model  DRE w/o VVPAT_1
+Other - Description","F5b_1other","qf5b_1other","partic_votingEquipment_DRE_make1_o"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Make/Model  DRE w/o VVPAT_1
+Number of machines of this make and model deployed for 2018 Election","F5c_1","qf5c_1","partic_votingEquipment_DRE_make1_num"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Make / Model DRE w/o VVPAT_2 - PULL DOWN
+(Pull down with all make/model options for DRE w/o VVPATs)","F5b_2","qf5b_2","partic_votingEquipment_DRE_make2"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Make/Model  DRE w/o VVPAT_2
+Other - Description","F5b_2other","qf5b_2other","partic_votingEquipment_DREt_make2_o"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Make/Model  DRE w/o VVPAT_2
+Number of machines of this make and model deployed for 2018 Election","F5c_2","qf5c_2","partic_votingEquipment_DRE_make2_num"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Make / Model DRE w/o VVPAT_3 - PULL DOWN
+(Pull down with all make/model options for DRE w/o VVPATs)","F5b_3","qf5b_3","partic_votingEquipment_DRE_make3"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Make/Model  DRE w/o VVPAT_3
+Other - Description","F5b_3other","qf5b_3other","partic_votingEquipment_DRE_make3_o"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Make/Model  DRE w/o VVPAT_3
+Number of machines of this make and model deployed for 2018 Election","F5c_3","qf5c_3","partic_votingEquipment_DRE_make3_num"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Were any of the listed machines used for...
+In-precinct Election Day Regular Ballot Voting - PULL DOWN
+(Yes/No)","F5d_1","qf5d_1","partic_votingEquipment_DRE_useElectionDay"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Were any of the listed machines used as...
+Special Device Accessible to Voters with a Disability - PULL DOWN
+(Yes/No)","F5d_2","qf5d_2","partic_votingEquipment_DRE_useDisability"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Were any of the listed machines used for...
+Provisional Ballot Voting - PULL DOWN
+(Yes/No)","F5d_3","qf5d_3","partic_votingEquipment_DRE_useProvisional"
+"Voting Technology - Direct Recording Electronic Machines Not Equipped with a Voter-Verified Paper Audit Trail (DRE w/o VVPAT)","Were any of the listed machines used for...
+In-Person Early Voting - PULL DOWN
+(Yes/No)","F5d_4","qf5d_4","partic_votingEquipment_DRE_useEarly"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Did your jurisdiction use any DRE w/ VVPAT for the 2018 Election? - PULL DOWN
+(Yes/No)","F6a","qf6a","partic_votingEquipment_DRE_vvpat"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Make / Model DRE w/ VVPAT_1 - PULL DOWN
+(Pull down with all make/model options for DRE w/ VVPATs with VVPAT)","F6b_1","qf6b_1","partic_votingEquipment_DRE_vvpat_make1"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Make/Model  DRE w/ VVPAT_1
+Other - Description","F6b_1other","qf6b_1other","partic_votingEquipment_DRE_vvpat_make1_o"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Make/Model  DRE w/ VVPAT_1
+Number of machines of this make and model deployed for 2018 Election","F6c_1","qf6c_1","partic_votingEquipment_DRE_vvpat_make1_num"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Make / Model DRE w/ VVPAT_2 - PULL DOWN
+(Pull down with all make/model options for DRE w/ VVPATs  with VVPAT)","F6b_2","qf6b_2","partic_votingEquipment_DRE_vvpat_make2"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Make/Model  DRE w/ VVPAT_2
+Other - Description","F6b_2other","qf6b_2other","partic_votingEquipment_DRE_vvpat_make2_o"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Make/Model  DRE w/ VVPAT_2
+Number of machines of this make and model deployed for 2018 Election","F6c_2","qf6c_2","partic_votingEquipment_DRE_vvpat_make2_num"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Make / Model DRE w/ VVPAT_3 - PULL DOWN
+(Pull down with all make/model options for DRE w/ VVPATs  with VVPAT)","F6b_3","qf6b_3","partic_votingEquipment_DRE_vvpat_make3"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Make/Model  DRE w/ VVPAT_3
+Other - Description","F6b_3other","qf6b_3other","partic_votingEquipment_DRE_vvpat_make3_o"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Make/Model  DRE w/ VVPAT_3
+Number of machines of this make and model deployed for 2018 Election","F6c_3","qf6c_3","partic_votingEquipment_DRE_vvpat_make3_num"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Were any of the listed machines used for...
+In-precinct Election Day Regular Ballot Voting - PULL DOWN
+(Yes/No)","F6d_1","qf6d_1","partic_votingEquipment_DRE_vvpat_useElectionDay"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Were any of the listed machines used as...
+Special Device Accessible to Voters with a Disability - PULL DOWN
+(Yes/No)","F6d_2","qf6d_2","partic_votingEquipment_DRE_vvpat_useDisability"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Were any of the listed machines used for...
+Provisional Ballot Voting - PULL DOWN
+(Yes/No)","F6d_3","qf6d_3","partic_votingEquipment_DRE_vvpat_useProvisional"
+"Voting Technology - Direct Recording Electronic Machines Equipped with a Voter-Verified Paper Audit Trail (DRE w/ VVPAT)","Were any of the listed machines used for...
+In-Person Early Voting - PULL DOWN
+(Yes/No)","F6d_4","qf6d_4","partic_votingEquipment_DRE_vvpat_useEarly"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Did your jurisdiction use any ballot marking device equipment for the 2018 Election? - PULL DOWN
+(Yes/No)","F7a","qf7a","partic_votingEquipment_BMD"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Make / Model Ballot Marking Device_1 - PULL DOWN
+(Pull down with all make/model options for Ballot Marking Device equipment)","F7b_1","qf7b_1","partic_votingEquipment_BMD_make1"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Make/Model  Ballot Marking Device_1
+Other - Description","F7b_1other","qf7b_1other","partic_votingEquipment_BMD_make1_o"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Make/Model  Ballot Marking Device_1
+Number of machines of this make and model deployed for 2018 Election","F7c_1","qf7c_1","partic_votingEquipment_BMD_make1_num"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Make / Model Ballot Marking Device_2 - PULL DOWN
+(Pull down with all make/model options for Ballot Marking Device  equipment)","F7b_2","qf7b_2","partic_votingEquipment_BMD_make2"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Make/Model  Ballot Marking Device_2
+Other - Description","F7b_2other","qf7b_2other","partic_votingEquipment_BMD_make2_o"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Make/Model  Ballot Marking Device_2
+Number of machines of this make and model deployed for 2018 Election","F7c_2","qf7c_2","partic_votingEquipment_BMD_make2_num"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Make / Model Ballot Marking Device_3 - PULL DOWN
+(Pull down with all make/model options for Ballot Marking Device equipment)","F7b_3","qf7b_3","partic_votingEquipment_BMD_make3"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Make/Model  Ballot Marking Device_3
+Other - Description","F7b_3other","qf7b_3other","partic_votingEquipment_BMD_make3_o"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Make/Model  Ballot Marking Device_3
+Number of machines of this make and model deployed for 2018 Election","F7c_3","qf7c_3","partic_votingEquipment_BMD_make3_num"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Were any of the listed machines used for...
+In-precinct Election Day Regular Ballot Voting - PULL DOWN
+(Yes/No)","F7d_1","qf7d_1","partic_votingEquipment_BMD_useElectionDay"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Were any of the listed machines used as...
+Special Device Accessible to Voters with a Disability - PULL DOWN
+(Yes/No)","F7d_2","qf7d_2","partic_votingEquipment_BMD_useDisability"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Were any of the listed machines used for...
+Provisional Ballot Voting - PULL DOWN
+(Yes/No)","F7d_3","qf7d_3","partic_votingEquipment_BMD_useProvisional"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Were any of the listed machines used for...
+In-Person Early Voting - PULL DOWN
+(Yes/No)","F7d_4","qf7d_4","partic_votingEquipment_BMD_useEarly"
+"Voting Technology - Electronic System that Produces a Paper Record but Does Not Tabulate Votes (Ballot Marking Device)","Were any of the listed machines used for...
+By Mail voting - PULL DOWN
+(Yes/No)","F7d_5","qf7d_5","partic_votingEquipment_BMD_useMailCount"
+"Voting Technology - Scanner (Optical/Digital)","Did your jurisdiction use any scanner equipment for the 2018 Election? - PULL DOWN
+(Yes/No)","F8a","qf8a","partic_votingEquipment_scanner"
+"Voting Technology - Scanner (Optical/Digital)","Make / Model Scanner_1 - PULL DOWN
+(Pull down with all make/model options for Scanner equipment)","F8b_1","qf8b_1","partic_votingEquipment_scanner_make1"
+"Voting Technology - Scanner (Optical/Digital)","Make/Model  Scanner_1
+Other - Description","F8b_1other","qf8b_1other","partic_votingEquipment_scanner_make1_o"
+"Voting Technology - Scanner (Optical/Digital)","Make/Model  Scanner_1
+Number of machines of this make and model deployed for 2018 Election","F8c_1","qf8c_1","partic_votingEquipment_scanner_make1_num"
+"Voting Technology - Scanner (Optical/Digital)","Make / Model Scanner_2 - PULL DOWN
+(Pull down with all make/model options for Scanner  equipment)","F8b_2","qf8b_2","partic_votingEquipment_scanner_make2"
+"Voting Technology - Scanner (Optical/Digital)","Make/Model  Scanner_2
+Other - Description","F8b_2other","qf8b_2other","partic_votingEquipment_scanner_make2_o"
+"Voting Technology - Scanner (Optical/Digital)","Make/Model  Scanner_2
+Number of machines of this make and model deployed for 2018 Election","F8c_2","qf8c_2","partic_votingEquipment_scanner_make2_num"
+"Voting Technology - Scanner (Optical/Digital)","Make / Model Scanner_3 - PULL DOWN
+(Pull down with all make/model options for Scanner equipment)","F8b_3","qf8b_3","partic_votingEquipment_scanner_make3"
+"Voting Technology - Scanner (Optical/Digital)","Make/Model  Scanner_3
+Other - Description","F8b_3other","qf8b_3other","partic_votingEquipment_scanner_make3_o"
+"Voting Technology - Scanner (Optical/Digital)","Make/Model  Scanner_3
+Number of machines of this make and model deployed for 2018 Election","F8c_3","qf8c_3","partic_votingEquipment_scanner_make3_num"
+"Voting Technology - Scanner (Optical/Digital)","Were any of the listed machines used for...
+In-precinct Election Day Regular Ballot Voting - PULL DOWN
+(Yes/No)","F8d_1","qf8d_1","partic_votingEquipment_scanner_useElectionDay"
+"Voting Technology - Scanner (Optical/Digital)","Were any of the listed machines used as...
+Special Device Accessible to Voters with a Disability - PULL DOWN
+(Yes/No)","F8d_2","qf8d_2","partic_votingEquipment_scanner_useDisability"
+"Voting Technology - Scanner (Optical/Digital)","Were any of the listed machines used for...
+Provisional Ballot Voting - PULL DOWN
+(Yes/No)","F8d_3","qf8d_3","partic_votingEquipment_scanner_useProvisional"
+"Voting Technology - Scanner (Optical/Digital)","Were any of the listed machines used for...
+In-Person Early Voting - PULL DOWN
+(Yes/No)","F8d_4","qf8d_4","partic_votingEquipment_scanner_useEarly"
+"Voting Technology - Scanner (Optical/Digital)","Were any of the listed machines used for...
+By Mail voting - PULL DOWN
+(Yes/No)","F8d_5","qf8d_5","partic_votingEquipment_scanner_useMailCount"
+"Voting Technology - Punch Card","Did your jurisdiction use any Punch Card equipment for the 2018 Election? - PULL DOWN
+(Yes/No)","F9a","qf9a","partic_votingEquipment_punchCard"
+"Voting Technology - Punch Card","Make/Model  Punch Card_1
+Other - Description","F9b_1other","qf9b_1other","partic_votingEquipment_punchCard_make1_o"
+"Voting Technology - Punch Card","Make/Model  Punch Card_1
+Number of machines of this make and model deployed for 2018 Election","F9c_1","qf9c_1","partic_votingEquipment_punchCard_make1_num"
+"Voting Technology - Punch Card","Make/Model  Punch Card_2
+Other - Description","F9b_2other","qf9b_2other","partic_votingEquipment_punchCard_make2_o"
+"Voting Technology - Punch Card","Make/Model  Punch Card_2
+Number of machines of this make and model deployed for 2018 Election","F9c_2","qf9c_2","partic_votingEquipment_punchCard_make2_num"
+"Voting Technology - Punch Card","Make/Model  Punch Card_3
+Other - Description","F9b_3other","qf9b_3other","partic_votingEquipment_punchCard_make3_o"
+"Voting Technology - Punch Card","Make/Model  Punch Card_3
+Number of machines of this make and model deployed for 2018 Election","F9c_3","qf9c_3","partic_votingEquipment_punchCard_make3_num"
+"Voting Technology - Punch Card","Were any of the listed machines used for...
+In-precinct Election Day Regular Ballot Voting - PULL DOWN
+(Yes/No)","F9d_1","qf9d_1","partic_votingEquipment_punchCard_useElectionDay"
+"Voting Technology - Punch Card","Were any of the listed machines used as...
+Special Device Accessible to Disabled Voters - PULL DOWN
+(Yes/No)","F9d_2","qf9d_2","partic_votingEquipment_punchCard_useDisability"
+"Voting Technology - Punch Card","Were any of the listed machines used for...
+Provisional Ballot Voting - PULL DOWN
+(Yes/No)","F9d_3","qf9d_3","partic_votingEquipment_punchCard_useProvisional"
+"Voting Technology - Punch Card","Were any of the listed machines used for...
+In-Person Early Voting - PULL DOWN
+(Yes/No)","F9d_4","qf9d_4","partic_votingEquipment_punchCard_useEarly"
+"Voting Technology - Punch Card","Were any of the listed machines used for...
+By Mail voting - PULL DOWN
+(Yes/No)","F9d_5","qf9d_5","partic_votingEquipment_punchCard_useMailCount"
+"Voting Technology - Lever","Did your jurisdiction use any Lever equipment for the 2018 Election? - PULL DOWN
+(Yes/No)","F10a","qf10a","partic_votingEquipment_lever"
+"Voting Technology - Lever","Make/Model  Lever_1
+Other - Description","F10b_1other","qf10b_1other","partic_votingEquipment_lever_make1_o"
+"Voting Technology - Lever","Make/Model  Lever_1
+Number of machines of this make and model deployed for 2018 Election","F10c_1","qf10c_1","partic_votingEquipment_lever_make1_num"
+"Voting Technology - Lever","Make/Model  Lever_2
+Other - Description","F10b_2other","qf10b_2other","partic_votingEquipment_lever_make2_o"
+"Voting Technology - Lever","Make/Model  Lever_2
+Number of machines of this make and model deployed for 2018 Election","F10c_2","qf10c_2","partic_votingEquipment_lever_make2_num"
+"Voting Technology - Lever","Make/Model  Lever_3
+Other - Description","F10b_3other","qf10b_3other","partic_votingEquipment_lever_make3_o"
+"Voting Technology - Lever","Make/Model  Lever_3
+Number of machines of this make and model deployed for 2018 Election","F10c_3","qf10c_3","partic_votingEquipment_lever_make3_num"
+"Voting Technology - Lever","Were any of the listed machines used for...
+In-precinct Election Day Regular Ballot Voting - PULL DOWN
+(Yes/No)","F10d_1","qf10d_1","partic_votingEquipment_lever_useElectionDay"
+"Voting Technology - Lever","Were any of the listed machines used as...
+Special Device Accessible to Disabled Voters - PULL DOWN
+(Yes/No)","F10d_2","qf10d_2","partic_votingEquipment_lever_useDisability"
+"Voting Technology - Lever","Were any of the listed machines used for...
+In-Person Early Voting - PULL DOWN
+(Yes/No)","F10d_4","qf10d_4","partic_votingEquipment_lever_useEarly"
+"Voting Technology - Hand Counted Paper Ballots (Not Optical/Digital Scan System)","Did your jurisdiction use Hand Counting for the 2018 Election? - PULL DOWN
+(Yes/No)","F11a","qf11a","partic_votingEquipment_handCount"
+"Voting Technology - Hand Counted Paper Ballots (Not Optical/Digital Scan System)","Was hand counting used for...
+In-precinct Election Day Regular Ballot Voting - PULL DOWN
+(Yes/No)","F11d_1","qf11d_1","partic_votingEquipment_handCount_useElectionDay"
+"Voting Technology - Hand Counted Paper Ballots (Not Optical/Digital Scan System)","Was hand counting used as…
+Special Device Accessible to Voters with a Disability - PULL DOWN
+(Yes/No)","F11d_2","qf11d_2","partic_votingEquipment_handCount_useDisability"
+"Voting Technology - Hand Counted Paper Ballots (Not Optical/Digital Scan System)","Was hand counting used for...
+Provisional Ballot Voting - PULL DOWN
+(Yes/No)","F11d_3","qf11d_3","partic_votingEquipment_handCount_useProvisional"
+"Voting Technology - Hand Counted Paper Ballots (Not Optical/Digital Scan System)","Was hand counting used for...
+In-Person Early Voting - PULL DOWN
+(Yes/No)","F11d_4","qf11d_4","partic_votingEquipment_handCount_useEarly"
+"Voting Technology - Hand Counted Paper Ballots (Not Optical/Digital Scan System)","Was hand counting used for...
+By Mail voting - PULL DOWN
+(Yes/No)","F11d_5","qf11d_5","partic_votingEquipment_handCount_useMailCount"
+"Voting Technology - Hand Counted Paper Ballots (Not Optical/Digital Scan System)","Voting Technology Comments","F5-F11Comments","qf5-f11comments","qf5-f11comments"
+"Location of Vote Tally","Location of vote tally for In-precinct Election Day Regular Ballot Voting - PULL DOWN
+(Central location, Precinct or polling location, Both central and precinct location, Does not apply)","F12a","qf12a","partic_tallyLocation_electionDay"
+"Location of Vote Tally","Location of vote tally for Special Device Accessible to Voters with a Disability - PULL DOWN
+(Central location, Precinct or polling location, Both central and precinct location, Does not apply)","F12b","qf12b","partic_tallyLocation_disability"
+"Location of Vote Tally","Location of vote tally for Provisional Ballot Voting - PULL DOWN
+(Central location, Precinct or polling location, Both central and precinct location, Does not apply)","F12c","qf12c","partic_tallyLocation_provisional"
+"Location of Vote Tally","Location of vote tally for In-Person Early Voting - PULL DOWN
+(Central location, Precinct or polling location, Both central and precinct location, Does not apply)","F12d","qf12d","partic_tallyLocation_early"
+"Location of Vote Tally","Location of vote tally for By Mail - PULL DOWN
+(Central location, Precinct or polling location, Both central and precinct location, Does not apply)","F12e","qf12e","partic_tallyLocation_mail"
+"Location of Vote Tally","Comments","F12Comments","qf12comments","partic_tallyLocation_c"
+"General Comments","Comments","F13GeneralComments","qf13generalcomments","qf13generalcomments"
