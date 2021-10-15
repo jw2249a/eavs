@@ -5,7 +5,6 @@
 #' @export
 rename_eavs <- function(eavs) {
   year <- eavs$year[1]
-  eavs.names <- read.csv("data/eavs_conversion_file.csv")
   replacement.names <- eavs.names[eavs.names$year == year,]
   match.names <- unlist(lapply(names(eavs), function(x) {
     val <- replacement.names$replacement_new[replacement.names$value == x]
