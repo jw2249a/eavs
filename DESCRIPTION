@@ -1,0 +1,21 @@
+Package: eavs
+Title: Data Tools for the Election Administration and Voting Survey
+Version: 0.1.0
+Authors@R:
+    c(person(given = "Jack",
+           family = "Williams",
+           role = c("aut", "cre"),
+           email = "jackryanwilliams@gmail.com"))
+Description: Help users download, match, and correct the biennial Election Administration and Voting Survey (EAVS), published by the U.S. Election Assistance Commission <https://www.eac.gov/research-and-data/studies-and-reports>.
+URL: https://github.com/jw2249a/eavs
+BugReports: https://github.com/jw2249a/eavs/issues
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports:
+    gdata,
+		readxl

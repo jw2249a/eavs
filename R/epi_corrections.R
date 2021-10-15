@@ -1,6 +1,3 @@
-
-
-
 epi_corrections <- function(var="", year="", print.out=T) {
   corrections <- read.csv("data/corrections.csv")
   state.corrections <- read.csv("data/corrections_statewide.csv")

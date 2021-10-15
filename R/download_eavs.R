@@ -75,7 +75,7 @@ download_eavs_year <- function(year, extract.dir) {
     outfile <- paste0(outdir,  "/eavs_2018.csv")
     download.file(url, destfile = outfile, mode = "wb",quiet = T, method="libcurl")
   } else if (year == 2020) {
-    url <- "http://www.eac.gov/sites/default/files/2021-08/2020_EAVS_for_Public_Release_nolabel[1].csv"
+    url <- "https://www.eac.gov/sites/default/files/EAVS%202020/2020_EAVS_for_Public_Release_nolabel_V2.csv"
     
     outdir <- create_dir(extract.dir, year)
     outfile <- paste0(outdir,  "/eavs_2020.csv")
@@ -84,9 +84,16 @@ download_eavs_year <- function(year, extract.dir) {
 }
 
 
-
-download_eavs <- function(years="", extract.dir = paste0(getwd(), "/data/")) {
-  if (years == "all" | years=="") years <- seq(from=2008, to=2020, by=2)
+#' download_eavs()
+#' @description Download EAVS data directly from the Election Assistance Commission. Note: we will be mirroring this data elsewhere for stability.
+#' @param years Array of valid years (even years from 2008-2020) or "all" or blank for all years. 
+#' @param extract.dir Defaults to data in current directory.
+#' @return a data frame.
+#' @export
+download_eavs <- function(years="", extract.dir = paste0(getwd(), "/data")) {
+  extract.dir <- paste0(extract.dir, "/")
+  dir.create(extract.dir, recursive = T, showWarnings = F)
+  if (years[1] == "all" | years[1] =="") years <- seq(from=2008, to=2020, by=2)
   for (year in years) {
     tryCatch(
       {

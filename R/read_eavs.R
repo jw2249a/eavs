@@ -1,9 +1,11 @@
-require("readxl")
-require("gdata")
-require("plyr")
-
-read_eavs <- function(year) {
-  data.dir <- paste0("data/", year)
+#' read_eavs()
+#' @description Read one year of data from the Election Administration and Voting Survey
+#' @param year Which year is being read; defaults to 4-digit year in file name
+#' @param data.dir directory that defaults to data/ in current directory
+#' @return a data frame, with dimensions depending on the year.
+#' @export
+read_eavs <- function(year, data.dir="data") {
+  data.dir <- paste0(data.dir,"/", year)
   
   
   if (length(dir(data.dir)) > 1) {
@@ -32,15 +34,15 @@ read_eavs <- function(year) {
         frame <- section
       } else {
         if (year == 2008) {
-          frame <- plyr::join(frame, section, type="full", by=c("STATE_", "JurisID"))
+          frame <- merge(frame, section, all=TRUE)
         } else if (year == 2014) {
           frame$FIPSCode <- as.numeric(frame$FIPSCode)
           section$FIPSCode <- as.numeric(section$FIPSCode)
-          frame <- plyr::join(frame, section, type="full", by=c("State", "Jurisdiction", "FIPSCode"))
+          frame <- merge(frame, section, all=TRUE)
         } else if (year == 2010 | year == 2012) {
           frame$FIPSCode <- as.numeric(frame$FIPSCode)
           section$FIPSCode <- as.numeric(section$FIPSCode)
-          frame <- plyr::join(frame, section, type="full", by=c("State", "FIPSCode"))
+          frame <- merge(frame, section, all=TRUE)
         }
         closeAllConnections()
       }
@@ -54,19 +56,23 @@ read_eavs <- function(year) {
 }
 
 
-write_eavs <- function(frame, format, year) {
-  if (format == "csv") {
-    write.csv(frame, paste0("data/",year, ".csv"))
-  }
-   
-}
-
-
-
+#' fix_eavs_vars()
+#' @description Basic standardization of EAVS variable names across years. Capitalization, exact matches are fixed here. Arbitrary variables that don't correspond to questions are removed.
+#' @param frame EAVS data.frame output from read_eavs(year). Requires 'year' var.
+#' 
+#' @return a data frame
+#' @export
 fix_eavs_vars <- function(frame) {
+  
+  # check year of data frame
   year <- frame$year[1]
+  
+  # all variables lowercase
   names(frame) <- tolower(names(frame))
+  
   if (year != 2014) {
+    
+    # add q in front of variable names (to match previous formats)
     names(frame)[grepl("^a", names(frame))] <- paste0("q", names(frame)[grepl("^a", names(frame))])
     names(frame)[grepl("^b", names(frame))] <- paste0("q", names(frame)[grepl("^b", names(frame))])
     names(frame)[grepl("^c", names(frame))] <- paste0("q", names(frame)[grepl("^c", names(frame))])
@@ -77,35 +83,40 @@ fix_eavs_vars <- function(frame) {
   
   
   if (year == 2008) {
+    
+    # fix variable names
     names(frame)[grepl("state", names(frame)) & !grepl("name", names(frame))] <- "state_abbv"
     names(frame)[grepl("state", names(frame)) & grepl("name", names(frame))] <- "state"
-    
     names(frame)[grepl("jurisid", names(frame))] <- "fipscode"
     names(frame)[grepl("juris", names(frame))] <- "jurisdiction"
     frame$fipscode <- frame$qfips_code
     frame <- frame[, names(frame) != "qfips_code"]
+    
     # get rid of inconsistent not available categories 
-    frame <- frame[,!grepl("_notavailable", names(frame))]
-    frame <- frame[,!grepl("_notapplicable", names(frame))]
-    frame <- frame[,!grepl("qf7.*na", names(frame))]
+    # frame <- frame[,!grepl("_notavailable", names(frame))]
+    # frame <- frame[,!grepl("_notapplicable", names(frame))]
+    # frame <- frame[,!grepl("qf7.*na", names(frame))]
     
 
   } else if (year %in% c(2010, 2012, 2014,2016)) {
+    
+    # standardize state variable to state abbreviations
     names(frame)[grepl("state", names(frame)) & !grepl("full", names(frame))] <- "state_abbv"
     frame$state <- unlist(lapply(frame$state_abbv, function(x) {
       c(state.name, "AMERICAN SAMOA", "DISTRICT OF COLUMBIA", "GUAM", 
         "PUERTO RICO", "VIRGIN ISLANDS")[c(state.abb,"AS","DC","GU","PR","VI")==x]
     }))
+    
+    # rename jurisdiction
     names(frame)[grepl("juris", names(frame))] <- "jurisdiction"
-    
-    
-    
-    # get rid of arbitrary columns
+
+    # get rid of arbitrary columns that do not correspond to questions
     frame <- frame[, names(frame) %in% c("x", "x.1", "x.2", "x.3", 
                                          "qfips_2digit", "preferredorder",
                                          "qansicode", "qansicode.1",
                                          "pk_id", "pk_id.1") == F]
-    # fix fipscode issue
+    
+    # fix fipscode name and issue (multiple matches in 2012)
     names(frame)[names(frame) == "qfips_code"] <- "fipscode"
     names(frame)[grepl("qfipscode", names(frame))] <- "fipscode"
     if (year == 2012) {
@@ -115,14 +126,15 @@ fix_eavs_vars <- function(frame) {
     }
     
     #get rid of arbitrary total categories from 2010-14
-    if (year %in% c(2010, 2012, 2014)) {
-      frame <- frame[, !grepl("q[a-f].*_total", names(frame))]
-    }
-    
+    # if (year %in% c(2010, 2012, 2014)) {
+    #   frame <- frame[, !grepl("q[a-f].*_total", names(frame))]
+    # }
+    # 
     
   } else if (year == 2018 | year == 2020) {
-    names(frame)[names(frame) == "qfipscode"] <- "fipscode"
     
+    # fix variable names (fipscode state, state_abbv, jurisdiction)
+    names(frame)[names(frame) == "qfipscode"] <- "fipscode"
     names(frame)[grepl("state", names(frame)) & !grepl("full", names(frame))] <- "state_abbv"
     names(frame)[grepl("state", names(frame)) & grepl("full", names(frame))] <- "state"
     names(frame)[grepl("juris", names(frame))] <- "jurisdiction"

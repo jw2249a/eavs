@@ -1,5 +1,11 @@
-defs <- read.csv("data/eavs_definitions.csv")
-
+#' download_eavs()
+#' @description Used to find and define EAVS variables in the clean EAVS file, or the regular EAVS
+#' @param var Searches variable names for matches. (example 'qa1a')
+#' @param question Searches question text. (example "registrations")
+#' @param topic Searches topics. List of topics can be seen with list_topics() function. 
+#' @param print.out logical. FALSE returns data.frame of variables. 
+#' @return a data frame or printed output.
+#' @export
 eavs_var <- function(var="", question="",topic="", print.out=T) {
   if (var != "") {
     if (substr(var, 1, 1) == "q") {
@@ -34,7 +40,10 @@ eavs_var <- function(var="", question="",topic="", print.out=T) {
 
 }
 
-
+#' download_eavs()
+#' @description Lists EAVS section topics 
+#' @return printed output
+#' @export
 list_topics <- function() {
   for (i in unique(defs$Topic)) cat(i, sep = "\n")
 }
@@ -44,6 +53,7 @@ list_topics <- function() {
 
 
 
+# how to create source data
 # defs <- read.csv("data/eavs_crosswalk.csv")
 # defs$Question.Number.formatted <- paste0("q", tolower(defs$Question.Number))
 # 

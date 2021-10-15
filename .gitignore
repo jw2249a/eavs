@@ -5,4 +5,5 @@
 /.git
 *.pptx
 *.xlsx
-all_years_eavs.csv
+scratch.R
+*.csv
